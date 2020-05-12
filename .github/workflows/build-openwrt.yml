@@ -62,12 +62,12 @@ jobs:
       run: |
         git clone https://github.com/coolsnowwolf/lede
         mv lede openwrt
-        cd openwrt/package
-        git clone https://github.com/kenzok8/openwrt-packages
-        git clone https://github.com/kenzok8/small
-        git clone https://github.com/atrandys/luci-udptools
-        cd ..
-        cd ..
+#        cd openwrt/package
+#        git clone https://github.com/kenzok8/openwrt-packages
+#        git clone https://github.com/kenzok8/small
+#        git clone https://github.com/atrandys/luci-udptools
+#        cd ..
+#        cd ..
 
     - name: Load custom feeds
       run: |
