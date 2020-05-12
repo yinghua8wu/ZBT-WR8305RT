@@ -19,8 +19,8 @@ on:
       - '.config'
 #  schedule:
 #    - cron: 0 8 * * 5
-#  watch:
-#    types: started
+  watch:
+    types: started
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
@@ -60,7 +60,8 @@ jobs:
 
     - name: Clone source code
       run: |
-        git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
+        git clone https://github.com/coolsnowwolf/lede
+        mv lede openwrt
         cd openwrt/package
         git clone https://github.com/kenzok8/openwrt-packages
         git clone https://github.com/atrandys/luci-udptools
