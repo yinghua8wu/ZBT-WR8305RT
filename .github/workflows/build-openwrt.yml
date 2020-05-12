@@ -65,6 +65,7 @@ jobs:
         git clone https://github.com/kenzok8/openwrt-packages
         git clone https://github.com/atrandys/luci-udptools
         cd ..
+        cd ..
 
     - name: Load custom feeds
       run: |
